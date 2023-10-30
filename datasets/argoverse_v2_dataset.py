@@ -133,7 +133,7 @@ class ArgoverseV2Dataset(Dataset):
         self._url = f'https://s3.amazonaws.com/argoverse/datasets/av2/tars/motion-forecasting/{split}.tar'
         self._num_samples = {
             'train': 199908,
-            'val': 24988,
+            'val': 500,
             'test': 24984,
         }[split]
         self._agent_types = ['vehicle', 'pedestrian', 'motorcyclist', 'cyclist', 'bus', 'static', 'background',
